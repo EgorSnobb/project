@@ -1,0 +1,148 @@
+
+
+body {
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  max-height: 1vh;
+}
+
+.page-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 485px;
+}
+
+.page-content h1{
+  background-image: linear-gradient(to right, #E51726, #D4208C );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-content h1{
+  font-size: 77px;
+  font-weight: 700;
+}
+
+.btn {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 140px;
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+  background-image: linear-gradient(to right, #E51726, #D4208C );
+}
+
+ol {
+  padding-left: 60px;
+  font-size: 55px;
+}
+
+li span{
+  background-image: none;
+  font-size: 38px;
+}
+
+.modal {
+  position: relative;
+}
+
+.overlow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.7)
+}
+
+.modalWin {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 552px;
+  z-index: 6;
+
+  left: 50%;
+  margin-left: -500px;
+  top: 0;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px #ccc;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modalWin-inner {
+  width: 100%;
+  height: 100%;
+  max-width: 630px;
+  max-height: 350px;
+
+  margin: 0 auto;
+}
+
+.modalWin-inner h3 {
+  font-size: 24px;
+}
+
+
+.input {
+  display: block;
+  margin: 40px auto 0;
+  width: 100%;
+  padding: 5px;
+
+  border: none;
+
+  border-bottom: solid 1px #ccc;
+}
+
+.input:last-child {
+  margin-bottom: 60px;
+}
+
+.input::placeholder {
+  color: #ccc;
+  text-align: center;
+}

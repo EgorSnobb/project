@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Test</title>
+</head>
+<body>
+  <main>
+    <div class="page">
+      <div class="page-inner">
+        <div class="page-logo">
+          <img src="img/Group 4840.png" alt="/">
+        </div>
+        
+        <div class="page-content">
+          <h1 class="title">How to Rarticipate</h1>
+          <ol class="list">
+            <li class="list-item">
+              <span class="list-item__num">1.</span>
+              <span class="list-item__text" >Subscribe to our News</span>
+            </li>
+            <li class="list-item">
+              <span class="list-item__num">2.</span>
+              <button class="btn" href="#" easy-toggle="#modalWin" easy-class="show" easy-rcoe>SIGN UP</button>
+            </li>
+            <li class="list-item">
+              <span class="list-item__num">3.</span>
+              <span class="list-item__text" >Check your Email inbox</span>
+            </li>
+            <li class="list-item">
+              <span class="list-item__num">4.</span>
+              <span class="list-item__text" >Wait till September 22</span>
+            </li>
+          </ol>
+        </div>
+
+        <div id="modalWin" class="modal">
+          <div class="modal-window">
+            <div class="modal-window__inner">
+
+              <h3 class="modal-window__title">To register, enter the mail,to witch our news is sent and set your password</h3>
+
+              <form class="modal-form" action="" method="post">
+                <input class="modal-form_input" type="mail" name="mail" placeholder="Example@email.com">
+                <input class="modal-form_input" type="password" name="password" placeholder="Password"> 
+              </form>
+
+              <button class="btn agree" href="#" easy-toggle="#modalConfurm" easy-class="show" easy-rcoe>SUBMIT</button>
+            </div>
+
+            <button class="btn-close" easy-remove="#modalWin" easy-class="show">x</button>
+
+          </div>
+          <div class="overlay" easy-toggle="#modalWin" easy-class="show"></div>
+        </div>
+
+        <div id="modalConfurm" class="modal confurm">
+          <div class="modal-window">
+            <div class="modal-window__inner">
+
+              <h1 class="title">Thank you</h1>
+              <p class="modal-confurm__text">To complete registration, please check your e-mail</p>
+
+            </div>
+
+            <button class="btn-close" easy-remove="#modalConfurm" easy-class="show">x</button>
+
+          </div>
+          <div class="overlay" easy-toggle="#modalConfurm" easy-class="show"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module">
+      /*!
+ * EasyToggler v2.2.7 (https://github.com/rah-emil/easy-toggler#readme)
+ * Copyright 2022 Rah Emil <013131@mail.ru>
+ * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
+ */
+!function(){"use strict";function e(e,t){const s=e.target.closest(`[${t.toggle}]`),o=e.target.closest(`[${t.remove}]`),l=e.target.closest(`[${t.add}]`);s&&(e.preventDefault(),((e,t)=>{const s=e.getAttribute(t.toggle);document.querySelectorAll(`[${t.toggle}]`).forEach((s=>{if(!s.hasAttribute(t.parallel)&&s!==e){document.querySelector(s.getAttribute(t.toggle)).classList.remove(s.getAttribute(t.class));const o=e.getAttribute(t.self);o&&e.classList.remove(o)}})),document.querySelector(s)?.classList.toggle(e.getAttribute(t.class));const o=e.getAttribute(t.self);o&&e.classList.toggle(o),t.onToggle(e)})(s,t)),o&&(e.preventDefault(),((e,t)=>{const s=e.getAttribute(t.remove),o=e.getAttribute(t.class);document.querySelectorAll(s).forEach((e=>{e.classList.remove(o)}));const l=e.getAttribute(t.self);l&&e.classList.remove(l),t.onRemove(e)})(o,t)),l&&(e.preventDefault(),((e,t)=>{const s=e.getAttribute(t.add),o=e.getAttribute(t.class);document.querySelectorAll(s).forEach((e=>{e.classList.add(o)}));const l=e.getAttribute(t.self);l&&e.classList.add(l),t.onAdd(e)})(l,t)),s||o||l||((e,t)=>{const s=document.querySelectorAll(`[${t.rcoe}]`);Array.from(s).forEach((s=>{let o=s.getAttribute(t.toggle),l=s.getAttribute(t.class);if(!e.target.closest(o)){document.querySelector(o)?.classList.remove(l);const e=s.getAttribute(t.self);e&&s.classList.remove(e),t.onRcoe(s)}}))})(e,t)}const t={toggle:"easy-toggle",add:"easy-add",remove:"easy-remove",class:"easy-class",rcoe:"easy-rcoe",parallel:"easy-parallel",self:"easy-self",selfRcoe:"easy-self-rcoe",onToggle(e){},onAdd(e){},onRemove(e){},onRcoe(e){}};document.addEventListener("DOMContentLoaded",(()=>{document.addEventListener("click",(s=>{e(s,t)}))}))}();
+//# sourceMappingURL=easy-toggler.iife.min.js.map
+    </script>
+  </main>
+</body>
+</html>
